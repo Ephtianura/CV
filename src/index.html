@@ -9,24 +9,24 @@
 </head>
 
 <body class="bg-gray-800">
-  <main class="a4">
-    <div class="flex flex-col h-full -mt-6">
+  <main class="a4  text-sm">
+    <div class="flex flex-col h-full -mt-7 ">
 
       <!-- Шапка -->
-      <header class="flex flex-col gap-3 items-center pb-4 border-b-2 border-gray-300">
-        <h1 class="text-[32px] font-bold text-primary">Костянтин Манцуров</h1>
-        <h2 class="text-2xl text-gray-700">C# Backend Developer</h2>
+      <header class="flex flex-col gap-2 items-center pb-4 border-b-2 border-gray-300">
+        <h1 class="text-2xl font-bold text-primary">Костянтин Манцуров</h1>
+        <h2 class="text-xl text-gray-700">C# Backend Developer</h2>
       </header>
 
-      <div class="grid grid-cols-[auto_1fr] flex-1 min-h-0 mt-2">
+      <div class="grid grid-cols-[auto_1fr]  mt-2 ">
 
         <!-- Перша колонка -->
-        <aside class="aside border-r-2 border-gray-300">
+        <aside class="aside border-r-2 border-gray-300 border-b-2">
 
           <!-- Контакти -->
           <section>
             <h3 class="h3"> Контакти </h3>
-            <div class="section text-gray-700">
+            <div class="section text-gray-700 text-[16px]">
               <div class="flex items-center gap-2">
                 <img src="phone-call.png" alt="" class="icon" />
                 <div class="flex flex-col gap-0">
@@ -50,9 +50,15 @@
                 @KykKyki
               </div>
               <!-- <div class="flex items-center gap-2">
+                <img src="linkedin.png" alt="" class="icon" />
+                <a href="https://www.linkedin.com/in/kostiantyn-mantsurov/"
+                  class="underline hover:text-black transition">LinkedIn</a>
+              </div>
+              <div class="flex items-center gap-2">
                 <img src="github.png" alt="" class="icon" />
                 <a href="https://github.com/Ephtianura" class="underline hover:text-black transition">GitHub</a>
               </div> -->
+
             </div>
           </section>
 
@@ -61,16 +67,17 @@
             <h3 class="h3"> Навички </h3>
             <ul class="main-list">
               <li>C#, .NET 8, ASP.NET Core</li>
-              <li class="mb-3">Entity Framework Core, LINQ</li>
+              <li class="mb-5">Entity Framework Core, LINQ</li>
 
               <li>MySQL, PostgreSQL, SQLite, Redis</li>
               <!-- <li class="font-bold">RabbitMQ, SignalR , <b>Nginx</b></li> -->
               <li>MinIO, FFMpegCore, xUnit</li>
 
-              <li class="my-3">React, Next.js, TypeScript, TailwindCSS</li>
+              <li class="my-5">React, Next.js, TypeScript, TailwindCSS</li>
 
               <!-- <li></li> -->
               <li>Docker, Swagger, Postman, DBeaver</li>
+              <li>OOP, SOLID, Clean Architecture</li>
               <li>Git, GitHub, GitFlow</li>
             </ul>
           </section>
@@ -87,8 +94,8 @@
           <!-- Освіта -->
           <section>
             <h3 class="h3"> Освіта </h3>
-            <div class="section">
-              <h4 class="font-bold">Середньо-спеціальна 2022-2026 <br> Software Engineering </h4>
+            <div class="section gap-0">
+              <h4 class="font-bold ">Середньо-спеціальна 2022-2026 <br> Software Engineering </h4>
               <p>НПФК «Одеської політехніки»</p>
             </div>
           </section>
@@ -99,9 +106,10 @@
             <ul class="main-list">
               <li>Фортепіано</li>
               <li>Радіоінженерія</li>
-              <li>Культура Японії</li>
+              <!-- <li>Культура Японії</li> -->
             </ul>
           </section>
+
         </aside>
 
         <!-- Друга колонка -->
@@ -111,32 +119,22 @@
           <section>
             <h3 class="h3"> Основна інформація </h3>
             <p class="paragraph">
-              Backend розробник із фокусом на .NET та React. <br>
-              Маю 2 роки досвіду створення складних систем з нуля на фрилансі: від архітектури БД до реалізації API,
-              real-time
-              механізмів та UI. <br>
-              Орієнтований на написання чистого, тестованого коду та вирішення бізнес-задач клієнтів.
+              C# / .NET Backend розробник із 2-річним досвідом автономної розробки складних систем. <br>
+              Спеціалізуюсь на створенні архітектури з нуля: від високонавантажених API до real-time сервісів та UI.<br>
+              Орієнтований на написання чистого та тестованого коду який приносить реальну цінність клієнту.
             </p>
           </section>
 
-          <!-- Досвід роботи (Freelance) -->
-          <!-- <section>
-            <h3 class="h3"> Досвід роботи (Freelance) </h3>
-            <p class="paragraph">
-            </p>
-            <p class="paragraph">
-            </p>
-          </section> -->
-
           <!-- Проєкти -->
           <section>
-            <h3 class="h3"> Ключові проєкти </h3>
-            <div class="flex flex-col gap-4">
+            <h3 class="h3"> Досвід роботи </h3>
+            <!-- <p class="text-sm text-gray-500">2024 - теперешній час</p> TODO -->
 
+            <div class="flex flex-col gap-1">
               <!-- Проєкт №1 -->
               <div>
                 <div class="project-name">
-                  <h4 class="font-bold text-lg">AnimeApp</h4>
+                  <h4 class="font-bold">AnimeApp</h4>
                   <!-- <a href="" class="underline">GitHub</a> -->
                 </div>
                 <div class="flex flex-col gap-2">
@@ -146,68 +144,117 @@
                     та власною системою управління медіаданими.
                   </p>
                   <p class="paragraph -mt-2">
-                    Реалізував систему кешування запитів через Redis, авторизацію, гнучку фільтрацію та
-                    адміністративну панель, для керуванням контентом та завантаження зображень в хмарове сховище.
+                    Розробив систему для роботи з великими об'ємами медіаданих.
+                    Реалізував систему кешування запитів через Redis,
+                    що дозволило <span class="font-semibold">знизити час відгуку API у 25 раз: з 5 секунд до 200
+                      мс</span> при
+                    високому навантаженні.
+                    Забезпечив масштабованість сховища за допомогою MinIO, гнучку фільтрацію,
+                    адміністративну панель та авторизацію через JWT.
                   </p>
 
-                  <!-- Технології: -->
-                  <p class="tech-list">
-                    C#, Asp.Net Core, EF Core, PostgreSQL, Redis, XUnit, JWT, MinIO; <br>
-                    React: Next.js, TailwindCSS.
-                  </p>
                 </div>
+                <!-- Технології: -->
+                <p class="tech-list">
+                  C#, Asp.Net Core, EF Core, PostgreSQL, Redis, XUnit, JWT, MinIO; <br>
+                  React: Next.js, TailwindCSS.
+                </p>
               </div>
 
               <!-- Проєкт №2 -->
               <div>
-                <div class="project-name">
-                  <h4 class="font-bold text-lg">Aurora</h4>
+                <div class="project-name-b">
+                  <h4 class="font-bold">Aurora</h4>
                   <!-- <a href="" class="underline">GitHub</a> -->
                 </div>
                 <div class="flex flex-col gap-2">
                   <!-- Опис -->
                   <p class="paragraph">
-                    Сервіс для завантаження та конвертації медіа з YouTube.<br>
-                    Реалізував обробку файлів за допомогою FFmpegCore та сповіщення 
-                    користувачів про готовність у реальному часі через SignalR<!-- та RabbitMQ-->. <!--  --> <br>
-                    Вирішує проблему надаючи зручний інтерфейс для конвертації відео та аудіо через FFMpeg.
-                  </p>
-                  <!-- Технології: -->
-                  <p class="tech-list">
-                    C#, Asp.Net Core, EF Core, SQLite, RabbitMQ, SignalR, FFMpegCore; <br>
-                    React: Next.js, TailwindCSS.
+                    Сервіс для асинхронної конвертації та завантаження медіа з YouTube.<br>
+                    Побудував конвеєр обробки файлів за допомогою FFmpegCore та реалізував сповіщення
+                    про готовність у реальному часі через SignalR.<br>
                   </p>
                 </div>
+                <!-- Технології: -->
+                <p class="tech-list">
+                  C#, Asp.Net Core, EF Core, SQLite, RabbitMQ, SignalR, FFMpegCore; <br>
+                  React: Next.js, TailwindCSS.
+                </p>
               </div>
 
-              <!-- Інше -->
+              <!-- Проєкт №3 -->
               <div>
-                <div class="project-name">
-                  <h4 class="font-bold text-lg">Інші комерційні кейси</h4>
+                <div class="project-name-b">
+                  <h4 class="font-bold">Grinding Engineering Calculator</h4>
+                  <!-- <a href="" class="underline">GitHub</a> -->
                 </div>
-                <ul class="main-list space-y-0">
-                  <li>
-                    <b>Booking & Rental Systems:</b> Системи (аналоги Aviasales та ін.) з функціоналом бронювання місць, управлінням автопарком та
-                    MinIO для медіа.
-                  </li>
-                  <li>
-                    <b>Testing Platform:</b> Система автоматизації тестуваннь з ролевою моделлю,
-                    конструктором питань та експортом у CSV.
-                  </li>
-                  <li>
-                    <b>Grinding Engineering Calculator (WinForms):</b> Спеціалізоване ПЗ для розрахунку режимів
-                    шліфування з використанням складних математичних моделей.
-                  </li>
-                  <li>
-                    <b>Admin Dashboards:</b> Розробка систем адміністрування (паркінг, кафе).
-                  </li>
-                </ul>
+                <div class="flex flex-col ">
+                  <!-- Опис -->
+                  <p class="paragraph">
+                    Спроєктував інженерне ПЗ для автоматизації
+                    високоточних розрахунків режимів шліфування.
+                  </p>
+                  <p class="paragraph">
+                    Вирішив проблему низької продуктивності,
+                    <span class="font-semibold">скоротивши час розрахунків у 24 рази: з 2 годин до 5 хвилин</span>
+                    шляхом переведення наукових формул у програмний код на C#.
+                    Завдяки ітеративній роботі з фідбеком користувачів,
+                    <span class="font-semibold">продукт було впроваджено в навчальний процес</span>
+                    профільних закладів.
+                  </p>
+                </div>
               </div>
 
             </div>
           </section>
-
         </aside>
+      </div>
+
+      <!-- Інші проєкти -->
+      <div class="flex flex-col gap-1 mt-1 px-2">
+
+        <!-- Проєкт №4 -->
+        <div>
+          <div class="project-name ">
+            <h4 class="font-bold">Admin Dashboards</h4>
+            <!-- <a href="" class="underline">GitHub</a> -->
+          </div>
+          <div class="flex flex-col gap-2">
+            <p class="paragraph">
+              Розробив систему панелей адміністрування для малого бізнесу (паркінг, кафе).
+            </p>
+          </div>
+        </div>
+
+        <!-- Проєкт №5 -->
+        <div>
+          <div class="project-name-b">
+            <h4 class="font-bold">Booking & Rental Systems</h4>
+            <!-- <a href="" class="underline">GitHub</a> -->
+          </div>
+          <div class="flex flex-col gap-2">
+            <p class="paragraph">
+              Розробив системи бронювання (аналоги Aviasales, сервісів оренди авто).
+              Проєктував реляційні бази даних.
+              Інтегрував роботу з медіа через S3-сумісні сховища.
+            </p>
+          </div>
+        </div>
+
+        <!-- Проєкт №6 -->
+        <div>
+          <div class="project-name-b">
+            <h4 class="font-bold">Testing Platform</h4>
+            <!-- <a href="" class="underline">GitHub</a> -->
+          </div>
+          <div class="flex flex-col gap-2">
+            <p class="paragraph">
+              Платформа автоматизації тестуваннь з ролевою моделлю,
+              конструктором питань та експортом у CSV.
+            </p>
+          </div>
+        </div>
+
       </div>
     </div>
   </main>
