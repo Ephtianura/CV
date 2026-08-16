@@ -9,7 +9,7 @@
 </head>
 
 <body class="bg-gray-800">
-  <main class="a4  text-sm">
+  <main class="a4 text-sm">
     <div class="flex flex-col h-full -mt-7 ">
 
       <!-- Шапка -->
@@ -37,7 +37,7 @@
               </div>
               <div class="flex items-center gap-2">
                 <img src="email.png" alt="" class="icon" />
-                <a href="mailto:" class="underline hover:text-black transition">
+                <a href="mailto:k.mantsurov@gmail.com" target="_blank" class="underline hover:text-black transition">
                   k.mantsurov@gmail.com
                 </a>
               </div>
@@ -51,12 +51,13 @@
               </div>
               <div class="flex items-center gap-2">
                 <img src="linkedin.png" alt="" class="icon" />
-                <a href="https://www.linkedin.com/in/mantsurov-kostiantyn/"
+                <a href="https://www.linkedin.com/in/mantsurov-kostiantyn/" target="_blank"
                   class="underline hover:text-black transition">LinkedIn</a>
               </div>
               <div class="flex items-center gap-2">
                 <img src="github.png" alt="" class="icon" />
-                <a href="https://github.com/Ephtianura" class="underline hover:text-black transition">GitHub</a>
+                <a href="https://github.com/Ephtianura" target="_blank"
+                  class="underline hover:text-black transition">GitHub</a>
               </div>
 
             </div>
@@ -69,16 +70,16 @@
               <li>C#, .NET 8, ASP.NET Core</li>
               <li class="mb-5">Entity Framework Core, LINQ</li>
 
-              <li>MySQL, PostgreSQL, SQLite, Redis</li>
-              <li>RabbitMQ, SignalR, Nginx</li>
-              <li>MinIO, FFMpegCore, xUnit</li>
+              <li>PostgreSQL, MySQL, Redis</li>
+              <li>RabbitMQ, SignalR, Nginx, Cloudflare</li>
+              <li>AWS S3, MinIO, FFmpegCore, Seq</li>
 
               <li class="my-5">React, Next.js, TypeScript, TailwindCSS</li>
 
               <!-- <li></li> -->
-              <li>Docker, Swagger, Postman, DBeaver</li>
+              <li>Docker, Swagger, Postman</li>
               <li>OOP, SOLID, Clean Architecture</li>
-              <li>Git, GitHub, GitFlow</li>
+              <li>Git, GitHub, GitFlow, CI/CD</li>
             </ul>
           </section>
 
@@ -106,7 +107,6 @@
             <ul class="main-list">
               <li>Фортепіано</li>
               <li>Радіоінженерія</li>
-              <!-- <li>Культура Японії</li> -->
             </ul>
           </section>
 
@@ -119,36 +119,34 @@
           <section>
             <h3 class="h3"> Основна інформація </h3>
             <p class="paragraph">
-              C# / .NET Backend розробник із 2-річним досвідом автономної розробки складних систем.
-              Спеціалізуюсь на створенні архітектури з нуля: від високонавантажених API до real-time сервісів та UI.<br>
-            </p>
-
-            <!-- <p class="paragraph">
-              C# / .NET Backend розробник із 2-річним досвідом автономної розробки складних систем.
+              C# / .NET інженер<!--із 2-річним досвідом-->.
+              Беру на себе повний цикл автономного створення складних веб-систем під ключ:
+              від проєктування архітектури, оптимізації сервісів до розгортання інфраструктури та полірування UX.
             </p>
             <p class="paragraph">
-              Спеціалізуюсь на створенні архітектури з нуля: від високонавантажених API до real-time сервісів та UI.<br>
-            </p> -->
-            <p class="paragraph">
-              Орієнтований на написання чистого та тестованого коду який приносить реальну цінність клієнту.
+              <!--Фокусуюсь на надійності, покращенні продуктивності,
+              візуальній охайності продуктів та безпечному деплої на серверах. -->
+              Спираюся на широкий інженерний бекграунд у суміжних сферах, що дозволяє
+              швидко занурюватися у нові предметні області та знаходити нестандартні рішення.
             </p>
-
           </section>
 
           <!-- Проєкти -->
           <section>
             <h3 class="h3"> Досвід роботи </h3>
-            <!-- <p class="text-sm text-gray-500">2024 - теперешній час</p> TODO -->
+            <!-- <p class="text-sm text-gray-500">2024 - теперешній час</p>  -->
 
             <div class="flex flex-col gap-1">
               <!-- Проєкт №1 -->
               <div>
                 <div class="project-name">
-                  <h4 class="font-bold">AniFlow</h4>
+                  <span class="flex gap-1 items-center">
+                    <h4 class="font-bold">AniFlow</h4> <span class="text-xs">(09.2025 - Now)</span>
+                  </span>
                   <div class="flex gap-2">
                     <div class="flex items-center gap-2">
                       <!-- <img src="net.png" alt="" class="w-4 h-4" /> -->
-                      <a href="http://aniflow.xyz/" class="text-blue-900 underline">
+                      <a href="http://aniflow.xyz/" target="_blank" class="text-blue-900 underline">
                         Live Demo
                       </a>
                       <p class="text-blue-900  border-x border-gray-300 px-2">
@@ -156,74 +154,83 @@
                       </p>
                     </div>
 
-                    <a href="" class="underline">GitHub</a>
+                    <a href="https://github.com/Ephtianura/AniFlow" target="_blank" class="underline">GitHub</a>
                   </div>
 
                 </div>
                 <div class="flex flex-col gap-2">
                   <!-- Опис -->
                   <p class="paragraph">
-                    Платформа-агрегатор аніме-контенту з інтегрованим зовнішнім плеєром
-                    та власною системою управління медіаданими.
+                    Платформа-агрегатор для перегляду аніме українською. <br>
+                    Розробив модульний моноліт із фоновим автопарсингом через партнерів,
+                    трекінгом онлайну, кастомною адмін-панеллю з метриками,
+                    наскрізним OST-плеєром та соціальними функціями.
                   </p>
                   <p class="paragraph -mt-2">
-                    Розробив систему для роботи з великими об'ємами медіаданих.
-                    Реалізував систему кешування запитів через Redis,
-                    що дозволило <span class="font-semibold">знизити час відгуку API у 25 раз: з 5 секунд до 200
-                      мс</span> при
-                    високому навантаженні.
-                    Забезпечив масштабованість сховища за допомогою MinIO, гнучку фільтрацію,
-                    адміністративну панель та авторизацію через JWT.
+                    Оптимізував EF Core, впровадив багаторівневе кешування, що знизило час
+                    відповіді API у
+                    <span class="font-semibold">25 разів (з 5 с до 200 мс)</span>.
+                    Мігрував MinIO на AWS S3, налаштував CI/CD та інфраструктуру,
+                    перевів фронтенд на SSR, що прискорило завантаження сторінок на
+                    <span class="font-semibold"> 700 мс</span> і гарантувало SEO-індексацію.
                   </p>
-
                 </div>
+
                 <!-- Технології: -->
                 <p class="tech-list">
-                  C#, Asp.Net Core, EF Core, PostgreSQL, Redis, Nginx, XUnit, JWT, MinIO; <br>
-                  React: Next.js, TailwindCSS.
+                  C#, ASP.NET Core, EF Core, PostgreSQL, Redis, RabbitMQ, SignalR, Seq, Nginx, Cloudflare, AWS S3; <br>
+                  React, TypeScript, Next.js, TailwindCSS.
                 </p>
               </div>
 
               <!-- Проєкт №2 -->
               <div>
                 <div class="project-name-b">
-                  <h4 class="font-bold">Aurora</h4>
-                  <a href="" class="underline">GitHub</a>
+                  <span class="flex gap-1 items-center">
+                    <h4 class="font-bold">Aurora</h4> <span class="text-xs">(12.2025 - 07.2026)</span>
+                  </span>
+                  <a href="https://github.com/Ephtianura/Aurora" target="_blank" class="underline">GitHub</a>
                 </div>
                 <div class="flex flex-col gap-2">
                   <!-- Опис -->
                   <p class="paragraph">
-                    Сервіс для асинхронної конвертації та завантаження медіа з YouTube.<br>
-                    Побудував конвеєр обробки файлів за допомогою FFmpegCore та реалізував сповіщення
-                    про готовність у реальному часі через SignalR.<br>
+                    Подієво-орієнтований додаток пакетної обробки та конвертації медіаданих.
+                    Розробив асинхронний конвеєр обробки аудіо із автоматичним парсингом, вшиванням
+                    ID3-тегів, обкладинок та вбудованим файловим менеджментом.
+                  </p>
+                  <p class="paragraph -mt-2">
+                    Спроектував архітектуру на RabbitMQ із 5 паралельними воркерами та системою повторних спроб.
+                    Налаштував обробку через FFmpegCore, реалізував відмовостійкий
+                    fallback на інші фреймворки та організував відстеженя прогресу в реальному часі через SignalR.
                   </p>
                 </div>
                 <!-- Технології: -->
                 <p class="tech-list">
-                  C#, Asp.Net Core, EF Core, SQLite, RabbitMQ, SignalR, FFMpegCore; <br>
-                  React: Next.js, TailwindCSS.
+                  C#, ASP.NET Core, EF Core, RabbitMQ, SignalR, FFmpegCore, Docker; <br>
+                  React, Next.js, TailwindCSS.
                 </p>
               </div>
 
               <!-- Проєкт №3 -->
               <div>
                 <div class="project-name-b">
-                  <h4 class="font-bold">Grinding Engineering Calculator</h4>
-                  <a href="" class="underline">GitHub</a>
+                  
+                   <span class="flex gap-1 items-center">
+                    <h4 class="font-bold">Grinding Engineering Calculator</h4> <span class="text-xs">(01.2024 - 06.2024)</span>
+                  </span>
+                  <a href="https://github.com/Ephtianura/GrindingCalc" target="_blank" class="underline">GitHub</a>
                 </div>
                 <div class="flex flex-col ">
                   <!-- Опис -->
                   <p class="paragraph">
-                    Спроєктував інженерне ПЗ для автоматизації
+                    Спроєктував інженерне ПЗ для закладів освіти з автоматизацією
                     високоточних розрахунків режимів шліфування.
                   </p>
                   <p class="paragraph">
-                    Вирішив проблему низької продуктивності,
+                    Усунув низьку продуктивность,
                     <span class="font-semibold">скоротивши час розрахунків у 24 рази: з 2 годин до 5 хвилин</span>
                     шляхом переведення наукових формул у програмний код на C#.
-                    Завдяки ітеративній роботі з фідбеком користувачів,
-                    <span class="font-semibold">продукт було впроваджено в навчальний процес</span>
-                    профільних закладів.
+                  <p class="font-semibold">Продукт було впроваджено в навчальний процес </p>профільних закладів.
                   </p>
                 </div>
               </div>
@@ -234,50 +241,13 @@
       </div>
 
       <!-- Інші проєкти -->
-      <div class="flex flex-col gap-1 mt-1 px-2">
-
-        <!-- Проєкт №4 -->
-        <div>
-          <div class="project-name ">
-            <h4 class="font-bold">Admin Dashboards</h4>
-            <a href="" class="underline">GitHub</a>
-          </div>
-          <div class="flex flex-col gap-2">
-            <p class="paragraph">
-              Розробив систему панелей адміністрування для малого бізнесу (паркінг, кафе).
-            </p>
-          </div>
-        </div>
-
-        <!-- Проєкт №5 -->
-        <div>
-          <div class="project-name-b">
-            <h4 class="font-bold">Booking & Rental Systems</h4>
-            <a href="" class="underline">GitHub</a>
-          </div>
-          <div class="flex flex-col gap-2">
-            <p class="paragraph">
-              Розробив системи бронювання (аналоги Aviasales, сервісів оренди авто).
-              Проєктував реляційні бази даних.
-              Інтегрував роботу з медіа через S3-сумісні сховища.
-            </p>
-          </div>
-        </div>
-
-        <!-- Проєкт №6 -->
-        <div>
-          <div class="project-name-b">
-            <h4 class="font-bold">Testing Platform</h4>
-            <a href="" class="underline">GitHub</a>
-          </div>
-          <div class="flex flex-col gap-2">
-            <p class="paragraph">
-              Платформа автоматизації тестуваннь з ролевою моделлю,
-              конструктором питань та експортом у CSV.
-            </p>
-          </div>
-        </div>
-
+      <div class="mt-2 text-sm">
+        <!-- <p class="font-semibold text-gray-800">Портфоліо:</p> -->
+        <p class="">
+          З іншими вартими уваги проєктами можна ознайомитися у моєму
+          <a href="https://github.com/Ephtianura/Portfolio" target="_blank"
+            class="text-blue-900 underline font-medium">GitHub-портфоліо</a>.
+        </p>
       </div>
     </div>
   </main>
