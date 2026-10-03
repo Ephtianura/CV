@@ -10,12 +10,19 @@
 </head>
 
 <body class="bg-gray-800">
-  <main class="a4 text-sm">
+  <main class="a4 text-sm relative group">
+
+    <div id="language-switcher" class="absolute right-2 top-2 opacity-0 group-hover:opacity-100 transition-opacity">
+      <a href="?lang=uk" class="main-link">UA</a>
+      |
+      <a href="?lang=en" class="main-link">EN</a>
+    </div>
+
     <div class="flex flex-col h-full -mt-7 ">
 
       <!-- Шапка -->
       <header class="flex flex-col gap-2 items-center pb-4 border-b-2 border-gray-300">
-        <h1 class="text-2xl font-bold text-primary">Костянтин Манцуров</h1>
+        <h1 class="text-2xl font-bold text-primary" data-i18n="name">Костянтин Манцуров</h1>
         <h2 class="text-xl text-gray-700">C# Backend Developer</h2>
       </header>
 
@@ -26,41 +33,34 @@
 
           <!-- Контакти -->
           <section>
-            <h3 class="h3"> Контакти </h3>
+            <h3 class="h3" data-i18n="sections.contacts"> Контакти </h3>
             <div class="section text-gray-700 text-[16px]">
               <div class="flex items-center gap-2">
                 <img src="location.png" alt="" class="icon" />
-                Польща · Remote
-              </div>
-              <!-- <div class="flex items-center gap-2">
-                <img src="phone-call.png" alt="" class="icon" />
-                <div class="flex flex-col gap-0">
-                  <span>
-                    +48<span class="mx-1">575</span>317<span class="mx-1">913</span>
-                  </span>
+                <div>
+                  <span data-i18n="contacts.location">Польща</span> · Remote
                 </div>
-              </div> -->
+              </div>
               <div class="flex items-center gap-2">
                 <img src="email.png" alt="" class="icon" />
-                <a href="mailto:k.mantsurov@gmail.com" target="_blank" class="underline hover:text-black transition">
+                <a href="mailto:k.mantsurov@gmail.com" target="_blank" class="black-link">
                   k.mantsurov@gmail.com
                 </a>
               </div>
               <div class="flex items-center gap-2">
                 <img src="telegram.png" alt="" class="icon" />
-                <a href="https://t.me/KykKyki" target="_blank" class="underline hover:text-black transition">
+                <a href="https://t.me/KykKyki" target="_blank" class="black-link">
                   @KykKyki
                 </a>
               </div>
               <div class="flex items-center gap-2">
                 <img src="linkedin.png" alt="" class="icon" />
                 <a href="https://www.linkedin.com/in/mantsurov-kostiantyn/" target="_blank"
-                  class="underline hover:text-black transition">LinkedIn</a>
+                  class="black-link">LinkedIn</a>
               </div>
               <div class="flex items-center gap-2">
                 <img src="github.png" alt="" class="icon" />
-                <a href="https://github.com/Ephtianura" target="_blank"
-                  class="underline hover:text-black transition">GitHub</a>
+                <a href="https://github.com/Ephtianura" target="_blank" class="black-link">GitHub</a>
               </div>
 
             </div>
@@ -68,7 +68,7 @@
 
           <!-- Навички -->
           <section>
-            <h3 class="h3"> Навички </h3>
+            <h3 class="h3" data-i18n="sections.skills"> Навички </h3>
             <ul class="main-list">
               <li>C#, .NET 8, ASP.NET Core</li>
               <li class="mb-5">Entity Framework Core, LINQ</li>
@@ -88,28 +88,30 @@
 
           <!-- Володіння мовами -->
           <section>
-            <h3 class="h3"> Володіння мовами </h3>
+            <h3 class="h3" data-i18n="sections.languages"> Володіння мовами </h3>
             <ul class="main-list">
-              <li>English – <span class="font-medium">Intermediate</span></li>
-              <li>Українська – <span class="font-medium">Рідна</span></li>
+              <li><span data-i18n="languages.english">English</span> – <span class="font-medium"
+                  data-i18n="languages.english_level">Intermediate</span></li>
+              <li><span data-i18n="languages.ukrainian">Українська</span> – <span class="font-medium"
+                  data-i18n="languages.ukrainian_level">Рідна</span></li>
             </ul>
           </section>
 
           <!-- Освіта -->
           <section>
-            <h3 class="h3"> Освіта </h3>
+            <h3 class="h3" data-i18n="sections.education"> Освіта </h3>
             <div class="section gap-0">
               <h4 class="font-bold ">Professional Bachelor · 2022-2026 <br> Software Engineering </h4>
-              <p>НПФК «Одеської політехніки»</p>
+              <p data-i18n="education.institution">НПФК «Одеської політехніки»</p>
             </div>
           </section>
 
           <!-- Хобі -->
           <section>
-            <h3 class="h3"> Хобі </h3>
+            <h3 class="h3" data-i18n="sections.hobbies"> Хобі </h3>
             <ul class="main-list">
-              <li>Фортепіано</li>
-              <li>Радіоінженерія</li>
+              <li data-i18n="hobbies.piano">Фортепіано</li>
+              <li data-i18n="hobbies.radio">Радіоінженерія</li>
             </ul>
           </section>
 
@@ -120,13 +122,13 @@
 
           <!-- Основна інформація -->
           <section>
-            <h3 class="h3"> Основна інформація </h3>
-            <p class="paragraph">
+            <h3 class="h3" data-i18n="sections.summary"> Основна інформація </h3>
+            <p class="paragraph" data-i18n="summary.p1">
               C# / .NET інженер із 2-річним досвідом виконання замовлень.
               Беру на себе повний цикл створення складних веб-систем:
               від проєктування архітектури, оптимізації сервісів до розгортання інфраструктури та полірування UX.
             </p>
-            <p class="paragraph">
+            <p class="paragraph" data-i18n="summary.p2">
               Спираюся на широкий інженерний бекграунд у суміжних сферах, що дозволяє
               швидко занурюватися у нові предметні області. Люблю брати ініціативу та ділитися знаннями.
             </p>
@@ -134,20 +136,17 @@
 
           <!-- Проєкти -->
           <section>
-            <h3 class="h3"> Досвід роботи </h3>
-            <!-- <p class="text-sm text-gray-500">2024 - теперешній час</p>  -->
-
+            <h3 class="h3" data-i18n="sections.experience"> Досвід роботи </h3>
             <div class="flex flex-col gap-1">
               <!-- Проєкт №1 -->
               <div>
                 <div class="project-name">
                   <span class="flex gap-1 items-center">
-                    <h4 class="font-bold">AniFlow</h4> <span class="text-xs">(09.2025 - Now)</span>
+                    <h4 class="font-bold">AniFlow</h4> <span class="text-xs">(09.2025 - Present)</span>
                   </span>
                   <div class="flex gap-2">
                     <div class="flex items-center gap-2">
-                      <!-- <img src="net.png" alt="" class="w-4 h-4" /> -->
-                      <a href="http://aniflow.xyz/" target="_blank" class="text-blue-900 underline">
+                      <a href="http://aniflow.xyz/" target="_blank" class="underline text-blue-900 hover:text-blue-950">
                         Live Demo
                       </a>
                       <p class="text-blue-900  border-x border-gray-300 px-2">
@@ -155,27 +154,27 @@
                       </p>
                     </div>
 
-                    <a href="https://github.com/Ephtianura/AniFlow" target="_blank" class="underline">GitHub</a>
+                    <a href="https://github.com/Ephtianura/AniFlow" target="_blank" class="black-link">GitHub</a>
                   </div>
 
                 </div>
                 <div class="flex flex-col gap-2">
                   <!-- Опис -->
-                  <p class="paragraph">
+                  <p class="paragraph" data-i18n="projects.aniflow.desc1">
                     Платформа-агрегатор для перегляду аніме фільмів та серіалів українською.
                   </p>
-                  <p class="paragraph -mt-2">
+                  <p class="paragraph -mt-2" data-i18n="projects.aniflow.desc2">
                     Розробив модульний моноліт із фоновим автопарсингом через партнерів,
                     трекінгом онлайну, збиранням метрик, соціальними функціями та монетизацією.
                   </p>
                   <p class="paragraph -mt-2">
-                    Оптимізував EF Core, впровадив багаторівневе кешування, що знизило час
-                    відповіді API у
-                    <span class="font-semibold">20 разів</span>.
-                    Мігрував AWS S3, налаштував CI/CD та інфраструктуру,
-                    перевів фронтенд на SSR, що прискорило завантаження сторінок на
-                    <span class="font-semibold"> 700 мс</span> і гарантувало SEO-індексацію
-                    зі стабільним трафіком користувачів.
+                    <span data-i18n="projects.aniflow.desc3_p1">Оптимізував EF Core, впровадив багаторівневе кешування,
+                      що знизило час відповіді API у </span><span class="font-semibold"
+                      data-i18n="projects.aniflow.desc3_stat1">20 разів</span><span
+                      data-i18n="projects.aniflow.desc3_p2">. Мігрував AWS S3, налаштував CI/CD та інфраструктуру,
+                      перевів фронтенд на SSR, що прискорило завантаження сторінок на </span><span class="font-semibold"
+                      data-i18n="projects.aniflow.desc3_stat2">700 мс</span><span data-i18n="projects.aniflow.desc3_p3">
+                      і гарантувало SEO-індексацію зі стабільним трафіком користувачів.</span>
                   </p>
                 </div>
 
@@ -192,19 +191,19 @@
                   <span class="flex gap-1 items-center">
                     <h4 class="font-bold">Aurora</h4> <span class="text-xs">(12.2025 - 07.2026)</span>
                   </span>
-                  <a href="https://github.com/Ephtianura/Aurora" target="_blank" class="underline">GitHub</a>
+                  <a href="https://github.com/Ephtianura/Aurora" target="_blank" class="black-link">GitHub</a>
                 </div>
                 <div class="flex flex-col gap-2">
                   <!-- Опис -->
-                  <p class="paragraph">
+                  <p class="paragraph" data-i18n="projects.aurora.desc1">
                     Подієво-орієнтований додаток пакетної обробки та конвертації медіаданих.
                     Розробив асинхронний конвеєр обробки аудіо із автоматичним парсингом, вшиванням
                     ID3-тегів, обкладинок та вбудованим файловим менеджментом.
                   </p>
-                  <p class="paragraph -mt-2">
+                  <p class="paragraph -mt-2" data-i18n="projects.aurora.desc2">
                     Спроектував архітектуру на RabbitMQ із 5 паралельними воркерами та системою повторних спроб.
                     Налаштував обробку через FFmpegCore, реалізував відмовостійкий
-                    fallback на інші фреймворки та організував відстеженя прогресу в реальному часі через SignalR.
+                    fallback на інші фреймворки та організував відстеження прогресу в реальному часі через SignalR.
                   </p>
                 </div>
                 <!-- Технології: -->
@@ -222,19 +221,21 @@
                     <h4 class="font-bold">Grinding Engineering Calculation</h4> <span class="text-xs">(01.2024 -
                       06.2024)</span>
                   </span>
-                  <a href="https://github.com/Ephtianura/GrindingCalc" target="_blank" class="underline">GitHub</a>
+                  <a href="https://github.com/Ephtianura/GrindingCalc" target="_blank" class="black-link">GitHub</a>
                 </div>
                 <div class="flex flex-col ">
                   <!-- Опис -->
-                  <p class="paragraph">
+                  <p class="paragraph" data-i18n="projects.grinding.desc1">
                     Інженерне ПЗ для технологів з автоматизацією
                     високоточних розрахунків режимів різання.
                   </p>
                   <p class="paragraph">
-                    Усунув низьку продуктивность,
-                    <span class="font-semibold">скоротивши час розрахунків у 24 рази: з 2 годин до 5 хвилин</span>
-                    шляхом переведення наукових формул і таблиць у програмний код на C#.
-                    <span class="font-semibold">Продукт впроваджено в навчальний процес </span>профільних закладів.
+                    <span data-i18n="projects.grinding.desc2_p1">Усунув низьку продуктивність, </span><span
+                      class="font-semibold" data-i18n="projects.grinding.desc2_stat">скоротивши час розрахунків у 24
+                      рази: з 2 годин до 5 хвилин</span><span data-i18n="projects.grinding.desc2_p2"> шляхом переведення
+                      наукових формул і таблиць у програмний код на C#. </span><span class="font-semibold"
+                      data-i18n="projects.grinding.desc2_highlight">Продукт впроваджено в навчальний процес </span><span
+                      data-i18n="projects.grinding.desc2_p3">профільних закладів.</span>
                   </p>
                 </div>
               </div>
@@ -246,15 +247,76 @@
 
       <!-- Інші проєкти -->
       <div class="mt-2 text-sm">
-        <!-- <p class="font-semibold text-gray-800">Портфоліо:</p> -->
         <p class="">
-          З іншими вартими уваги проєктами можна ознайомитися у моєму
-          <a href="https://github.com/Ephtianura/Portfolio" target="_blank"
-            class="text-blue-900 underline font-medium">GitHub-портфоліо</a>.
+          <span data-i18n="footer.text_p1">З іншими вартими уваги проєктами можна ознайомитися у моєму </span><a
+            href="https://github.com/Ephtianura/Portfolio" target="_blank"
+            class="text-blue-900 hover:text-blue-950 underline font-medium"
+            data-i18n="footer.link_text">GitHub-портфоліо</a>.
         </p>
       </div>
     </div>
   </main>
+
+<script>
+  const languageSwitcher = document.getElementById("language-switcher");
+  languageSwitcher.classList.remove("opacity-0");
+  languageSwitcher.classList.add("opacity-100");
+  setTimeout(() => {
+    languageSwitcher.classList.remove("opacity-100");
+    languageSwitcher.classList.add("opacity-0");
+  }, 3000);
+
+  let enData = null;
+  const originalTexts = {};
+
+  document.querySelectorAll('[data-i18n]').forEach(el => {
+    originalTexts[el.dataset.i18n] = el.innerHTML;
+  });
+
+  async function setLanguage(lang, updateUrl = true) {
+    if (lang === 'en') {
+      if (!enData) {
+        const res = await fetch('./locales/en.json');
+        enData = await res.json();
+      }
+      document.querySelectorAll('[data-i18n]').forEach(el => {
+        const key = el.dataset.i18n;
+        const value = key.split('.').reduce((obj, k) => obj && obj[k], enData);
+        if (value) el.innerHTML = value;
+      });
+      document.documentElement.lang = 'en';
+    } else {
+      document.querySelectorAll('[data-i18n]').forEach(el => {
+        const key = el.dataset.i18n;
+        if (originalTexts[key]) el.innerHTML = originalTexts[key];
+      });
+      document.documentElement.lang = 'uk';
+    }
+
+    if (updateUrl) {
+      const newUrl = new URL(window.location);
+      newUrl.searchParams.set('lang', lang);
+      window.history.pushState({}, '', newUrl);
+    }
+  }
+
+  const urlParams = new URLSearchParams(window.location.search);
+  const currentLang = urlParams.get('lang');
+
+  if (currentLang === 'en') {
+    setLanguage('en', false);
+  }
+
+  document.querySelector('a[href="?lang=uk"]').addEventListener('click', (e) => {
+    e.preventDefault();
+    setLanguage('uk');
+  });
+
+  document.querySelector('a[href="?lang=en"]').addEventListener('click', (e) => {
+    e.preventDefault();
+    setLanguage('en');
+  });
+</script>
 </body>
 
 </html>

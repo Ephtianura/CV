@@ -1,0 +1,59 @@
+{
+  "name": "Kostiantyn Mantsurov",
+  "sections": {
+    "contacts": "Contacts",
+    "skills": "Skills",
+    "languages": "Languages",
+    "education": "Education",
+    "hobbies": "Hobbies",
+    "summary": "Summary",
+    "experience": "Work Experience"
+  },
+  "contacts": {
+    "location": "Poland"
+  },
+  "languages": {
+    "english": "English",
+    "english_level": "Intermediate",
+    "ukrainian": "Ukrainian",
+    "ukrainian_level": "Native"
+  },
+  "education": {
+    "institution": "NKPFC of Odesa Polytechnic"
+  },
+  "hobbies": {
+    "piano": "Piano",
+    "radio": "Radio Engineering"
+  },
+  "summary": {
+    "p1": "C# / .NET engineer with 2 years of commercial software development experience. I cover the full development lifecycle of complex web systems: from architecture design and service optimization to infrastructure deployment and UX polishing.",
+    "p2": "I rely on a broad engineering background in related technical fields, which allows me to quickly immerse myself in new domain areas. I enjoy taking initiative and sharing technical knowledge."
+  },
+  "projects": {
+    "aniflow": {
+      "desc1": "Aggregator platform for streaming anime movies and series in Ukrainian.",
+      "desc2": "Developed a modular monolith with background auto-parsing of partner sources, online user tracking, metrics collection, social features, and monetization.",
+      "desc3_p1": "Optimized EF Core and implemented multi-level caching, which reduced API response time by ",
+      "desc3_stat1": "20x",
+      "desc3_p2": ". Migrated to AWS S3, set up CI/CD infrastructure, and transitioned the frontend to SSR, speeding up page loading by ",
+      "desc3_stat2": "700 ms",
+      "desc3_p3": " while guaranteeing SEO indexing and stable user traffic."
+    },
+    "aurora": {
+      "desc1": "Event-driven application for batch processing and media data conversion. Developed an asynchronous audio processing pipeline featuring automatic metadata parsing, ID3 tagging, cover embedding, and built-in file management.",
+      "desc2": "Designed a RabbitMQ-based architecture with 5 parallel workers and a retry pattern. Configured processing via FFmpegCore, implemented a fault-tolerant fallback to alternative frameworks, and enabled real-time progress tracking via SignalR."
+    },
+    "grinding": {
+      "desc1": "Engineering software for process engineers automating high-precision cutting condition calculations.",
+      "desc2_p1": "Eliminated low performance, ",
+      "desc2_stat": "reducing calculation time by 24x: from 2 hours to 5 minutes",
+      "desc2_p2": " by translating scientific formulas and lookup tables into C# code. ",
+      "desc2_highlight": "The product has been integrated into the curriculum ",
+      "desc2_p3": "of specialized educational institutions."
+    }
+  },
+  "footer": {
+    "text_p1": "Other notable projects can be found in my ",
+    "link_text": "GitHub portfolio"
+  }
+}

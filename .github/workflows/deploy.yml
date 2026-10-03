@@ -24,7 +24,6 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      # Обновили Node.js до 24
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
@@ -39,10 +38,11 @@ jobs:
 
       - name: Prepare Clean Production Build
         run: |
-          mkdir build
+          mkdir -p build
           cp src/index.html build/index.html
           sed -i 's|\.\./dist/output.css|./dist/output.css|g' build/index.html
-          cp -r dist build/
+          cp -r src/locales build/ 2>/dev/null || true
+          cp -r dist build/ 2>/dev/null || true
           cp src/*.png build/ 2>/dev/null || true
           cp src/*.jpg build/ 2>/dev/null || true
           cp src/*.svg build/ 2>/dev/null || true
